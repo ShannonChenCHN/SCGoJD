@@ -11,12 +11,16 @@
 7. 我的: @"定位", @"支付", @"清除缓存", 退出登陆
 
 ##登陆信息
-    *登陆账号：13576123427
-    *密码：123qweasdzxc
-    *App Key：AB4E85FAC0FE0B4C1B29906283622BBA
-    *App Secret： 1524ffbf66904396b0b1efbadfda6565
+    登陆账号：13576123427
+    密　　码：123qweasdzxc
+    App Key：AB4E85FAC0FE0B4C1B29906283622BBA
+    App Secret：1524ffbf66904396b0b1efbadfda6565
 
 
-##注意：
+##注意
 由于京东宙斯平台的限制，一个账号只能访问500次，因此如果有出现无法加载页面的情况，请自行前往京东宙斯平台申请appkey进行测试。
-*京东宙斯平台URL：http://jos.jd.com
+    京东宙斯平台URL：http://jos.jd.com
+
+许可证
+==============
+SCGoJD 使用 MIT 许可证，详见 LICENSE 。
