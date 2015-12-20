@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="SCSelectionSkuCell">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已选" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfH-zP-ZfQ">
+                        <rect key="frame" x="13" y="18" width="35" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="F5J-g3-EWg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMz-EA-mdI" userLabel="选择样式">
+                        <rect key="frame" x="53" y="11" width="171" height="35"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WK8-dC-2fC" userLabel="减">
+                        <rect key="frame" x="227" y="11" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="0Nw-BB-QUc"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="jdm_btn_reduceCount">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="subtractButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NVP-B9-4OD"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VHp-4g-OJU" userLabel="数量">
+                        <rect key="frame" x="262" y="11" width="40" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krq-q0-m2w" userLabel="加">
+                        <rect key="frame" x="302" y="11" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="c0Y-bl-CYx"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="jdm_btn_addCount">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="plusButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2qc-Dp-0XV"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="krq-q0-m2w" firstAttribute="leading" secondItem="VHp-4g-OJU" secondAttribute="trailing" id="6AQ-FP-H1p"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="vMz-EA-mdI" secondAttribute="bottom" constant="3" id="CJL-5a-wuC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="krq-q0-m2w" secondAttribute="bottom" constant="3" id="Fff-rF-hlM"/>
+                    <constraint firstItem="vMz-EA-mdI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="Gv4-0f-KK4"/>
+                    <constraint firstItem="WK8-dC-2fC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="IGF-2V-LiT"/>
+                    <constraint firstItem="OfH-zP-ZfQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="MbD-z5-Seq"/>
+                    <constraint firstItem="krq-q0-m2w" firstAttribute="leading" secondItem="WK8-dC-2fC" secondAttribute="trailing" constant="40" id="PYB-If-Wm3"/>
+                    <constraint firstItem="VHp-4g-OJU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="Sno-Ba-OjL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="OfH-zP-ZfQ" secondAttribute="bottom" constant="10" id="Tcn-xt-gU7"/>
+                    <constraint firstItem="WK8-dC-2fC" firstAttribute="leading" secondItem="vMz-EA-mdI" secondAttribute="trailing" constant="3" id="Uw3-ac-vyb"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="krq-q0-m2w" secondAttribute="trailing" constant="5" id="V7b-YX-S9v"/>
+                    <constraint firstItem="OfH-zP-ZfQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="eGd-ds-zgq"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="VHp-4g-OJU" secondAttribute="bottom" constant="3" id="eKr-18-gge"/>
+                    <constraint firstItem="vMz-EA-mdI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="45" id="ehq-GA-C2V"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WK8-dC-2fC" secondAttribute="bottom" constant="3" id="luJ-KZ-5eJ"/>
+                    <constraint firstItem="krq-q0-m2w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="n08-6U-iec"/>
+                    <constraint firstItem="OfH-zP-ZfQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="x0v-sJ-BfI"/>
+                    <constraint firstItem="VHp-4g-OJU" firstAttribute="leading" secondItem="WK8-dC-2fC" secondAttribute="trailing" id="yvx-FU-pID"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="MbD-z5-Seq"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countTextField" destination="VHp-4g-OJU" id="8wI-zr-D0v"/>
+                <outlet property="selectionInfoLabel" destination="vMz-EA-mdI" id="DVR-oc-vAB"/>
+            </connections>
+            <point key="canvasLocation" x="504" y="385"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jdm_btn_addCount" width="66" height="50"/>
+        <image name="jdm_btn_reduceCount" width="66" height="50"/>
+    </resources>
+</document>

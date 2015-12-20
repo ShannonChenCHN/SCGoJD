@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="SCNamePriceCell">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品名" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3K6-x2-N7v" userLabel="商品名">
+                        <rect key="frame" x="13" y="13" width="303" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广告词" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bY-ZL-xAG">
+                        <rect key="frame" x="13" y="42" width="303" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="价格" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLx-uY-EJY" userLabel="价格">
+                        <rect key="frame" x="13" y="75" width="208" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="降价通知" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Shc-g3-lK7">
+                        <rect key="frame" x="256" y="76" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="UF0-kA-tJI"/>
+                            <constraint firstAttribute="width" constant="60" id="tFf-Xg-m2A"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Shc-g3-lK7" secondAttribute="bottom" constant="5" id="0uk-MJ-OAm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pLx-uY-EJY" secondAttribute="trailing" constant="100" id="1KZ-vZ-8WH"/>
+                    <constraint firstItem="3K6-x2-N7v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="1yk-ov-ehh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Shc-g3-lK7" secondAttribute="trailing" constant="5" id="C6J-8g-2Db"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3K6-x2-N7v" secondAttribute="trailing" constant="5" id="DFN-AV-utU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="2bY-ZL-xAG" secondAttribute="trailing" constant="5" id="Ihx-ph-cp8"/>
+                    <constraint firstItem="pLx-uY-EJY" firstAttribute="top" secondItem="2bY-ZL-xAG" secondAttribute="bottom" constant="18" id="TiW-Vk-fL4"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="pLx-uY-EJY" secondAttribute="bottom" constant="5" id="baj-ef-7qF"/>
+                    <constraint firstItem="pLx-uY-EJY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="eUj-3I-HMh"/>
+                    <constraint firstItem="3K6-x2-N7v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="haP-Yf-Jn5"/>
+                    <constraint firstItem="2bY-ZL-xAG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="j5O-YG-sdY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="adWordsLabel" destination="2bY-ZL-xAG" id="exF-AX-dno"/>
+                <outlet property="nameLabel" destination="3K6-x2-N7v" id="71f-bE-Wjm"/>
+                <outlet property="noteLabel" destination="Shc-g3-lK7" id="zYg-CI-Zru"/>
+                <outlet property="priceLabel" destination="pLx-uY-EJY" id="nr5-YL-vKe"/>
+            </connections>
+            <point key="canvasLocation" x="677.5" y="312"/>
+        </tableViewCell>
+    </objects>
+</document>

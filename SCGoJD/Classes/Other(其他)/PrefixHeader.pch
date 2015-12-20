@@ -1,0 +1,56 @@
+//
+//  PrefixHeader.pch
+//  SCGoJD
+//
+//  Created by mac on 15/9/20.
+//  Copyright (c) 2015年 mac. All rights reserved.
+//
+
+#ifndef SCGoJD_PrefixHeader_pch
+#define SCGoJD_PrefixHeader_pch
+
+// 分类
+#import "UIImage+SCImage.h"
+#import "UIView+SCFrame.h"
+#import "UIBarButtonItem+SCBarButtonItem.h"
+#import "NSObject+JSON.h"
+// 第三方
+#import "MJExtension.h"
+
+//app主窗口
+#define SCKeyWindow [UIApplication sharedApplication].keyWindow
+// 主屏幕大小
+#define SCMainScreenBounds [UIScreen mainScreen].bounds
+// 基本URL
+#define SCApiBaseURL           @"https://api.jd.com/routerjson"
+// appKey
+#define SCClient_id         @"AB4E85FAC0FE0B4C1B29906283622BBA"
+// 通知
+#define SCPageNumberDidChangeNotification               @"SCPageNumberDidChange"
+#define SCCurrentPageDidChangeNotification              @"SCCurrentPageDidChange"
+#define SCSelectedProductCountDidChangeNotification     @"SCSelectedProductCountDidChange"
+#define SCProductInfoDidRecievedNotification            @"SCProductInfoDidRecieved"
+#define SCProductBuyCountDidChangeNotification          @"SCProductBuyCountDidChange"
+// 偏好设置
+#define SCUserDefault [NSUserDefaults standardUserDefaults]
+
+#define SC_YES_string  @"YES"
+#define SC_NO_string   @"NO"
+
+// ...表示宏定义的可变参数
+// __VA_ARGS__:表示函数里的可变参数
+#ifdef DEBUG  //调试阶段
+
+#define SCLog(...) NSLog(__VA_ARGS__)
+
+#else //发布时
+
+#define SCLog(...)
+
+#endif
+
+
+
+
+
+#endif
